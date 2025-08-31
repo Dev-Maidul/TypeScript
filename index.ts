@@ -19,8 +19,36 @@
 // console.log(userId);
 //==================== Tuple data type======================
 // mixed data type key:value pairs
-let user:[number,string];
-user=[101,"Maidul"];
-console.log(user);
-user.push(102,"Jahid");
-console.log(user)
+// let user:[number,string];
+// user=[101,"Maidul"];
+// console.log(user);
+// user.push(102,"Jahid");
+// console.log(user)
+
+//==================== Enum data type======================
+// Enum store constant data types
+// There are 3 types of enums 1.Numeric, 2. String, 3. Hetergenous
+
+// Numeric enum
+// enum requestType{
+//     readData=1,
+//     saveData=2,
+//     deleteData=3,
+// }
+// console.log(requestType);
+
+//string enum
+// enum requestType2{
+//     readData="READ_Data",
+//     deleteData="DELETE_Data"
+// }
+// console.log(requestType2)
+
+// hetergenous enum
+enum RequestType3{
+    readData="Read_data",
+    saveData="Save_data",
+    deleteData=101
+}
+// console.log(RequestType3);
+console.log(RequestType3.deleteData);
