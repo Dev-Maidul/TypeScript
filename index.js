@@ -39,11 +39,18 @@
 // }
 // console.log(requestType2)
 // hetergenous enum
-var RequestType3;
-(function (RequestType3) {
-    RequestType3["readData"] = "Read_data";
-    RequestType3["saveData"] = "Save_data";
-    RequestType3[RequestType3["deleteData"] = 101] = "deleteData";
-})(RequestType3 || (RequestType3 = {}));
-// console.log(RequestType3);
-console.log(RequestType3.deleteData);
+// enum RequestType3{
+//     readData="Read_data",
+//     saveData="Save_data",
+//     deleteData=101
+// }
+// // console.log(RequestType3);
+// console.log(RequestType3.deleteData);
+//==================== Any data type======================
+// We can define any data types here
+var userId;
+userId = 101;
+userId = "303";
+userId = true;
+userId = [101, "202"];
+console.log(userId);

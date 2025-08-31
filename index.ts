@@ -45,10 +45,19 @@
 // console.log(requestType2)
 
 // hetergenous enum
-enum RequestType3{
-    readData="Read_data",
-    saveData="Save_data",
-    deleteData=101
-}
-// console.log(RequestType3);
-console.log(RequestType3.deleteData);
+// enum RequestType3{
+//     readData="Read_data",
+//     saveData="Save_data",
+//     deleteData=101
+// }
+// // console.log(RequestType3);
+// console.log(RequestType3.deleteData);
+//==================== Any data type======================
+// We can define any data types here
+
+let userId:any;
+userId=101;
+userId="303";
+userId=true;
+userId=[101,"202"];
+console.log(userId);
