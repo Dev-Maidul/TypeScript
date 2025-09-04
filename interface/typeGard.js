@@ -1,3 +1,4 @@
+// type guard
 function printTodos(todos) {
     if (todos) {
         todos.map(function (todo) { return console.log(todo); });
