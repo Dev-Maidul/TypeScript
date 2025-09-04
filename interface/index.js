@@ -1,17 +1,20 @@
-var users = [];
-var user1 = {
+// here declare an array which holds on objects of students
+var Students = [];
+var student1 = {
     id: 1,
-    name: "Mr Potato",
-    age: 22
+    name: "Mr kawwa",
+    year: 2023,
+    isGraduate: true
 };
-var user2 = {
+var student2 = {
     id: 2,
-    name: "Mr Kodu",
-    age: 21
+    name: "Mr Kader",
+    year: 2025,
+    isGraduate: false
 };
-var printInfo = function (user) {
-    console.log("Id: ".concat(user.id, ", UserName: ").concat(user.name, ", Age: ").concat(user.age));
+Students.push(student1);
+Students.push(student2);
+var printStudentInfo = function (student) {
+    console.log("Student ID: ".concat(student.id, ", Name: ").concat(student.name, ", Year: ").concat(student.year, ", IsGraduate: ").concat(student.isGraduate));
 };
-users.push(user1);
-users.push(user2);
-users.forEach(function (user) { return printInfo(user); });
+Students.forEach(function (student) { return printStudentInfo(student); });

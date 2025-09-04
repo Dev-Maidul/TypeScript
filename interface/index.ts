@@ -1,27 +1,30 @@
-// learning interface
-interface IUser{
+// Create Interface here 
+interface IStudent{
     id:number;
     name:string;
-    age:number
+    year:number;
+    isGraduate:boolean;
 }
-let users:IUser[]=[];
+// here declare an array which holds on objects of students
+let Students:IStudent[]=[];
 
-let user1:IUser={
+let student1:IStudent={
     id:1,
-    name:"Mr Potato",
-    age:22
+    name:"Mr kawwa",
+    year:2023,
+    isGraduate:true
 }
-let user2:IUser={
+let student2:IStudent={
     id:2,
-    name:"Mr Kodu",
-    age:21
+    name:"Mr Kader",
+    year:2025,
+    isGraduate:false
 }
 
-const printInfo=(user:IUser)=>{
-    console.log(`Id: ${user.id}, UserName: ${user.name}, Age: ${user.age}`)
+Students.push(student1);
+Students.push(student2);
+const printStudentInfo=(student:IStudent)=>{
+    console.log(`Student ID: ${student.id}, Name: ${student.name}, Year: ${student.year}, IsGraduate: ${student.isGraduate}`)
 }
 
-users.push(user1);
-users.push(user2);
-
-users.forEach(user=> printInfo(user));
+Students.forEach(student=>printStudentInfo(student));
