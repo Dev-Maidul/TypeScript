@@ -1,3 +1,4 @@
+// type guard
 function printTodos(todos:string[] | null){
     if(todos){
         todos.map(todo=>console.log(todo));
